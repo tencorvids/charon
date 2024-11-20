@@ -15,7 +15,7 @@ return {
 			editor = {
 				image = "https://yoolk.ninja/wp-content/uploads/2020/11/Apps-Neovim-1024x1024.png", -- Image ID or URL in case a custom client id is provided
 				client = "1157438221865717891", -- vim, neovim, lunarvim, nvchad, astronvim or your application's client id
-				tooltip = "Vim", -- Text to display when hovering over the editor's image
+				tooltip = '"It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away." -Antoine de Saint-Exupery', -- Text to display when hovering over the editor's image
 			},
 			display = {
 				show_time = true, -- Display start timestamp
