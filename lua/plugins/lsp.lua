@@ -143,5 +143,13 @@ return {
 		opts = {},
 
 		vim.keymap.set("n", "<LEADER>xx", "<CMD>Trouble diagnostics toggle<CR>", { desc = "Toggle trouble list" }),
+		vim.keymap.set("n", "<leader>xt", "<cmd>Trouble todo<cr>", {
+			silent = true,
+			desc = "Todo (Trouble)",
+		}),
+		vim.keymap.set("n", "<leader>xq", "<cmd>Trouble qflist toggle<cr>", {
+			silent = true,
+			desc = "Quickfix List (Trouble)",
+		}),
 	},
 }
