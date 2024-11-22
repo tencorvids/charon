@@ -25,7 +25,7 @@ return {
 		require("mini.base16").setup({
 			palette = {
 				base00 = "#000000", -- Default Background
-				base01 = "#121212", -- Lighter Background
+				base01 = "#000000", -- Lighter Background
 				base02 = "#222222", -- Selection Background
 				base03 = "#333333", -- Comments, Invisibles, Line Highlighting
 				base04 = "#999999", -- Dark Foreground (Used for status bars)
