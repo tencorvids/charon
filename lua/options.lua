@@ -19,7 +19,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.clipboard = "unnamedplus"
 
 -- Tab behavior settings
-vim.opt.expandtab = true
+-- TMP - use ft dir for godot (and python?) tab usage
+vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
