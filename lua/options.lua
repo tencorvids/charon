@@ -7,7 +7,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Make line numbers default
--- Add relative line numbers, for help with jumping
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -51,6 +50,9 @@ vim.opt.scrolloff = 10
 
 -- Set highlight on search
 vim.opt.hlsearch = true
+
+-- Hide end of buffer fill characters (~)
+vim.opt.fillchars = { eob = " " }
 
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
