@@ -40,4 +40,23 @@ return {
 
 		vim.keymap.set("n", "<leader>ut", vim.cmd.UndotreeToggle),
 	},
+
+	-- Obsidian integration
+	{
+		"epwalsh/obsidian.nvim",
+		version = "*",
+		lazy = true,
+		ft = "markdown",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		opts = {
+			workspaces = {
+				{
+					name = "tome",
+					path = "~/tome",
+				},
+			},
+		},
+	},
 }
