@@ -57,6 +57,9 @@ return {
 					path = "~/tome",
 				},
 			},
+			ui = {
+				enable = false,
+			},
 		},
 	},
 }
