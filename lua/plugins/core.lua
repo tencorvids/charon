@@ -70,6 +70,6 @@ return {
 			})
 		end,
 
-		vim.keymap.set("n", "<LEADER>o", "<CMD>Oil<CR>", { desc = "Trigger Oil file explorer buffer" }),
+		vim.keymap.set("n", "<LEADER>;", "<CMD>Oil<CR>", { desc = "Trigger Oil file explorer buffer" }),
 	},
 }
