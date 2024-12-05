@@ -22,7 +22,7 @@ return {
 		require("mini.pairs").setup()
 
 		-- Start screen
-		require("mini.starter").setup()
+		-- require("mini.starter").setup()
 
 		-- Base16 theming
 		require("mini.base16").setup({
