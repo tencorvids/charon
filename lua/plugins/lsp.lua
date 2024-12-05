@@ -63,13 +63,7 @@ return {
 				svelte = {},
 				tailwindcss = {},
 				gdscript = {},
-				denols = {
-					root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
-				},
-				ts_ls = {
-					root_dir = require("lspconfig").util.root_pattern("package.json"),
-					single_file_support = false,
-				},
+				ts_ls = {},
 			}
 
 			local lspconfig = require("lspconfig")
@@ -77,9 +71,6 @@ return {
 				lspconfig[server].setup({
 					capabilities = capabilities,
 					settings = config.settings,
-					on_attach = on_attach,
-					root_dir = config.root_dir,
-					single_file_support = config.single_file_support,
 				})
 			end
 		end,
