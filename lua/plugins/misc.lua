@@ -74,5 +74,8 @@ return {
 				return out
 			end,
 		},
+
+		vim.keymap.set("n", "<leader>oo", vim.cmd.ObsidianOpen),
+		vim.keymap.set("n", "<leader>ot", vim.cmd.ObsidianTags),
 	},
 }
