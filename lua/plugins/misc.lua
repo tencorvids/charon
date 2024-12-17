@@ -57,8 +57,16 @@ return {
 					path = "~/tome",
 				},
 			},
+
 			ui = {
 				enable = false,
+			},
+
+			daily_notes = {
+				folder = "Temporal",
+				date_format = "%Y/%d %B %Y",
+				default_tags = { "temporal" },
+				template = nil,
 			},
 
 			---@return table
