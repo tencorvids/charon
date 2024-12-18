@@ -84,7 +84,9 @@ return {
 		},
 
 		vim.keymap.set("n", "<leader>oo", vim.cmd.ObsidianOpen),
-		vim.keymap.set("n", "<leader>ot", vim.cmd.ObsidianTags),
+		vim.keymap.set("n", "<leader>oft", vim.cmd.ObsidianTags),
+		vim.keymap.set("n", "<leader>ot", vim.cmd.ObsidianToday),
+		vim.keymap.set("n", "<leader>oy", vim.cmd.ObsidianYesterday),
 	},
 	{
 		"goolord/alpha-nvim",
