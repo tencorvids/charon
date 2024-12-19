@@ -7,6 +7,11 @@ return {
 		lazy = false,
 	},
 
+	-- Copilot
+	{
+		"github/copilot.vim",
+	},
+
 	-- Jump to search
 	{
 		"folke/flash.nvim",
