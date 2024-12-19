@@ -23,6 +23,7 @@
             gcc
             rustc
             cargo
+            nodejs_22
           ];
 
           nvim = pkgs.wrapNeovimUnstable pkgs.neovim-unwrapped (
