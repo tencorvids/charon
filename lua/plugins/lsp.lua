@@ -61,8 +61,7 @@ return {
 				nixd = {},
 				astro = {},
 				svelte = {},
-				tailwindcss = {},
-				gdscript = {},
+				-- tailwindcss = {}, -- Setup by tailwind tools below
 				ts_ls = {},
 			}
 
@@ -163,6 +162,18 @@ return {
 			"nvim-telescope/telescope.nvim",
 			"neovim/nvim-lspconfig",
 		},
-		opts = {},
+		opts = {
+			server = {
+				settings = {
+					experimental = {
+						classRegex = {
+							":\\s*?[\"'`]([^\"'`]*).*?,",
+							"(?:const|let|var)\\s+\\w+Styles\\s*=\\s*[\"']([^\"']*)[\"']",
+							"(?:const|let|var)\\s+(?:\\w+Styles)\\s*=\\s*(?:{[^}]*}|'[^']*'|\"[^\"]*\")",
+						},
+					},
+				},
+			},
+		},
 	},
 }
